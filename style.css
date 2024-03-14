@@ -2,4 +2,105 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Poppins;
+}
+header{
+    width: 100%;
+    height: 52.0833vw;
+    display: flex;
+}
+.header-container{
+    width: 100%;    /* 1vw = 19.2px */
+    height: 52.0833vw;
+}
+.header-video{
+    width: 100%;
+    height: 52.0833vw;
+}
+.welcome{
+    width: 100%;
+    height: 41.66vw;
+    background-image: url(img/Screenshot_314\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.welcome-box{
+    width: 50%;
+    height: 41.66vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.welcome-box-inside{
+    width: 90%;
+    height: calc(41.66vw * 0.78);
+    background-color: rgba(48, 48, 48, 0.8);
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(4px);
+}
+.welcome-box-heading{
+    width: 75%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 3.33vw;
+    line-height: calc(3.33vw * 1.2);
+    letter-spacing: calc(3.33vw * 0.05);
+    text-align: center;
+}
+.welcome-box-heading span{
+    letter-spacing: calc(3.33vw * 0.2);
+}
+.welcome-box-description{
+    width: 85%;
+    height: 17vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-size: 1.875vw;
+    line-height: calc(1.875vw * 1.2);
+    letter-spacing: calc(1.875vw * 0.1);
+    text-align: center;
+}
+.info{
+    width: 100%;
+    height: 84.6875vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-container{
+    width: 89.583%;
+    height: 74.27083vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.info-subcontainer{
+    width: 39.583vw;
+    height: 74.27083vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.info-subcontainer-1-img-1, .info-subcontainer-1-img-1 img{
+    width: 39.583vw;
+    height: 22.39583vw;
 }
