@@ -39,6 +39,11 @@ header{
     width: 7.5vw;
     height: 6vw;
 }
+#loginButton{
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
 .header-socials-container{
     width: 18%;
     height: 10vw;
@@ -368,6 +373,99 @@ header{
 #six{
     height: 14vw;
 }
+.login{
+    width: 100%;
+    height: 100vw;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: rgba(48, 48, 48, 0.4);
+}
+#loginWindow{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.login-window{
+    width: 50%;
+    height: 40vw;
+    z-index: 3;
+    position: fixed;
+    top: 20vh;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 0.2vw solid white;
+}
+#closeWindow{
+    width: 2.5vw;
+    height: 3vw;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: white;
+    background-color: #303030;
+    border-style: none;
+    cursor: pointer;
+}
+.login-close{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.login-name{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-password{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-submit{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.login-forgor{
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nameWindow{
+    width: 20vw;
+    height: 3vw;
+    font-size: 2vw;
+    text-align: center;
+}
+#passwordWindow{
+    width: 20vw;
+    height: 3vw;
+    font-size: 2vw;
+    text-align: center;
+}
+#submitWindow{
+    width: 16vw;
+    height: 3vw;
+    font-size: 2vw;
+    text-align: center;
+}
+#forgorWindow{
+    font-size: 1.5vw;
+    color: white;
+}
 footer{
     width: 100%;
     height: 10.416vw;
@@ -383,4 +481,66 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.cookies{
+    width: 100%;
+    height: 18.125vw;
+    border-top: 0.625vw solid white;
+    background-color: #303030;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.cookies-container{
+    width: 89.583%;
+    height: 18.125vw;
+}
+.cookies-heading{
+    width: 100%;
+    height: 6.5vw;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-top: 0.25vw;
+}
+.cookies-text-1{
+    width: 100%;
+    height: 2vw;
+    line-height: 1.25vw;
+    font-size: 1.25vw;
+    display: flex;
+    align-items: center;
+}
+.cookies-text-1 a{
+    color: #CAEFFF;
+}
+.cookies-text-2{
+    width: 100%;
+    height: 6vw;
+    line-height: 1.75vw;
+    font-size: 1.25vw;
+    display: flex;
+    align-items: center;
+}
+.cookies-inputs{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+.cookies-check{
+    width: 27%;
+}
+.cookies-e-mail{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+.cookies-submit{
+    width: 15%;
 }
