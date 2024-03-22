@@ -7,7 +7,8 @@ let cookiesWindow = document.getElementById('cookiesWindow')
 let checkYes = document.getElementById('checkYes')
 let checkNo = document.getElementById('checkNo')
 let submitButton = document.getElementById('submitButton')
-let checkEmail = document.getElementById('incorrectEmail')
+let incorrectEmail = document.getElementById('incorrectEmail')
+let checkEmail = document.getElementById('electronicMail')
 
 function openLoginWindow(){
     openLogin.addEventListener("click", () => {
@@ -39,12 +40,17 @@ function cookiesClose(){
 function emailSubmit(){
     submitButton.addEventListener("click", () => {
         if(checkYes.checked == true){
-            if(checkEmail.checkVisibility() == false){
-                cookiesWindow.style.display = 'none'
-                cookiesWindow.disabled = true
+            if(checkEmail.value == ""){
+                alert('Your E-Mail is incorrect, try again.')
             }
             else{
-                alert('Your E-Mail is incorrect, try again.')
+                if(incorrectEmail.checkVisibility() == false){
+                    cookiesWindow.style.display = 'none'
+                    cookiesWindow.disabled = true
+                }
+                else{
+                    alert('Your E-Mail is incorrect, try again.')
+                }
             }
         }
         else{
