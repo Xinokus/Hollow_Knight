@@ -199,6 +199,7 @@ header{
 .dlcs-container{
     width: 89.583%;
     height: 40.52083vw;
+    transition: 0.5s all ease;
 }
 .dlcs-texts{
     width: 100%;
@@ -215,12 +216,14 @@ header{
     font-weight: 700;
     line-height: 5.4166vw;
     letter-spacing: calc(5.4166vw * 0.05);
+    transition: 0.5s all ease;
 }
 .dlcs-description{
     height: 4vw;
     font-size: 1.875vw;
     line-height: calc(1.875vw * 1.2);
     letter-spacing: calc(1.875vw * 0.05);
+    transition: 0.5s all ease;
 }
 .dlcs-imgs{
     width: 100%;
@@ -239,8 +242,8 @@ header{
     transition: 0.5s all ease;
 }
 .dlcs-imgs img:hover{
-    filter: grayscale(0);
-    scale: 1.01;
+    filter: grayscale(0) !important;
+    scale: 1.01 !important;
 }
 .dlc-info{
     border-top: 0.625vw solid #AA26BF;
@@ -249,6 +252,7 @@ header{
     height: 55.8vw;
     display: flex;
     justify-content: end;
+    transition: 0.5s all ease;
 }
 .dlc-info-video-container{
     width: 100%;
@@ -256,6 +260,8 @@ header{
     position: absolute;
     z-index: 0;
     object-fit: cover;
+    transition: 0.5s all ease;
+    background-color: black;
 }
 .dlc-info-box{
     width: 50%;
@@ -276,6 +282,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: 0.5s all ease;
 }
 .dlc-info-box-heading{
     width: 100%;
@@ -375,7 +382,7 @@ header{
 }
 .login{
     width: 100%;
-    height: 100vw;
+    height: 1000vw;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -391,7 +398,7 @@ header{
     height: 40vw;
     z-index: 3;
     position: fixed;
-    top: 20vh;
+    top: 5vw;
     background-color: #303030;
     display: flex;
     justify-content: space-between;
@@ -491,8 +498,9 @@ footer{
     bottom: 0;
     z-index: 5;
     color: white;
-    display: flex;
+    display: none;
     justify-content: center;
+    opacity: 1;
 }
 .cookies-container{
     width: 89.583%;
@@ -534,13 +542,65 @@ footer{
     justify-content: space-between;
 }
 .cookies-check{
-    width: 27%;
+    width: 35%;
+    height: 4vw;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    margin-top: 0.25vw;
+}
+.checkBox{
+    width: 1vw;
+    height: 1vw;
+}
+#checkNo:checked ~ #checkFinal{
+    display: inline;
+}
+#checkNo:checked ~ #checkLabelFinal{
+    display: inline;
+}
+#checkFinal, #checkLabelFinal{
+    display: none;
 }
 .cookies-e-mail{
     width: 40%;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    font-size: 1.25vw;
+}
+.incorrectEmail{
+    width: 13vw;
+    font-size: 0.75vw;
+    position: relative;
+    left: 8vw;
+    color: red;
+    display: none;
 }
 .cookies-submit{
-    width: 15%;
+    width: 18%;
+    display: flex;
+}
+.electronicMail{
+    width: 60%;
+    margin-left: 0.5vw;
+    font-size: 1vw;
+    line-height: 1vw;
+    margin-top: 0.2vw;
+    border: 0vw solid red;
+}
+.electronicMail:invalid{
+    border: 0.15vw solid red;
+}
+.electronicMail:invalid + .incorrectEmail{
+    display: block;
+}
+.cookies-button{
+    width: 100%;
+    height: 1.7vw;
+    margin-left: 1vw;
+    background-color: #CAEFFF;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    margin-top: 0.2vw;
 }

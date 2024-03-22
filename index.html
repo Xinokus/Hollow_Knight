@@ -144,17 +144,17 @@
                 </div>
             </div>
         </section>
-        <section class="dlc-info">
+        <section class="dlc-info" id="dlc-section">
             <div class="dlc-info-video-container">
-                <video src="img/Hollow Knight Hidden Dreams.mp4" autoplay muted loop class="dlc-info-video-container"></video>
+                <video src="img/Hollow Knight Hidden Dreams.mp4" autoplay muted loop class="dlc-info-video-container" id="dlc-video"></video>
             </div>
             <div class="dlc-info-box">
-                <div class="dlc-info-box-container">
+                <div class="dlc-info-box-container" id="dlc-back">
                     <div class="dlc-info-box-heading">
-                        <p>Hidden Dreams</p>
+                        <p id="dlc-name">Hidden Dreams</p>
                     </div>
                     <div class="dlc-info-box-description">
-                        <p>
+                        <p id="dlc-description">
                             Lorem ipsum dolor sit amet 
                             consectetur adipisicing elit. <br>
                             <br>
@@ -216,7 +216,7 @@
                 </div>
             </div>
         </section>
-        <section class="cookies">
+        <section class="cookies" id="cookiesWindow">
             <div class="cookies-container">
                 <div class="cookies-heading">
                     <p>Cookies and all that stuff</p>
@@ -230,19 +230,25 @@
                 </div>
                 <div class="cookies-inputs">
                     <div class="cookies-check">
-                        <input type="checkbox" name="Yes" id="checkYes">
-                        <label for="Yes">Yes, I would like to recieve E-mails. </label>
+                        <input type="checkbox" name="Yes" id="checkYes" class="checkBox">
+                        <label for="Yes" class="checkLabel">Yes, I would like to recieve E-mails. </label>
                     </div>
                     <div class="cookies-check">
-                        <input type="checkbox" name="No" id="checkNo">
-                        <label for="No">No, I don’t want to recieve E-mails. </label> 
+                        <input type="checkbox" name="No" id="checkNo" class="checkBox">
+                        <label for="No" class="checkLabel">No, I don’t want to recieve E-mails. </label> 
+                        <br>
+                        <input type="checkbox" name="Sure" id="checkFinal" class="checkBox">
+                        <label for="Sure" class="checkLabel" id="checkLabelFinal">Are you sure?</label>
                     </div>
                     <div class="cookies-e-mail">
-                        <label for="E-mail">Your E-Mail: </label>
-                        <input type="email" name="E-mail" id="electronicMail">
+                        <div>
+                            <label for="E-mail">Your E-Mail: </label>
+                            <input type="email" name="E-mail" class="electronicMail" id="electronicMail">
+                            <p class="incorrectEmail" id="incorrectEmail">* Entered E-Mail is incorrect!</p>
+                        </div>
                     </div>
                     <div class="cookies-submit">
-                        <button type="button">Submit</button>
+                        <button type="button" class="cookies-button" id="submitButton">Submit</button>
                     </div>
                 </div>
             </div>
