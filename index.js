@@ -10,6 +10,11 @@ let submitButton = document.getElementById('submitButton')
 let incorrectEmail = document.getElementById('incorrectEmail')
 let checkEmail = document.getElementById('electronicMail')
 
+let burgerOpen = document.getElementById('burgerOpen')
+let burgerMenu = document.getElementById('burgerMenu')
+let burgerBack = document.getElementById('burgerBack')
+let burgerClose = document.getElementById('burgerClose')
+
 function openLoginWindow(){
     openLogin.addEventListener("click", () => {
         loginWindow.style.display = 'flex'
@@ -67,7 +72,7 @@ function checkOnly(){
     })
 }
 
-setTimeout(() => cookiesWindow.style.display = 'flex', 2000)
+/*setTimeout(() => cookiesWindow.style.display = 'flex', 2000)*/
 
 checkOnly()
 emailSubmit()
@@ -146,5 +151,16 @@ Godmaster.onclick = function(){
     Godmaster.style.scale = '1.01'
     Godmaster.style.filter = 'grayscale(0)'
 }
+
+burgerOpen.addEventListener("click", () => {
+    burgerMenu.style.right = "0%"
+    burgerBack.style.opacity = "1"
+    burgerBack.style.visibility = "visible"
+})
+burgerClose.addEventListener("click", () => {
+    burgerMenu.style.right = "-70%"
+    burgerBack.style.opacity = "0"
+    burgerBack.style.visibility = "hidden"
+})
 
 websiteStart()
